@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  min-height: 100vh;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 620px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stat-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  color: #38bdf8;
+}
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+.goal-banner {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 14px;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 13px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #38bdf8;
+  color: #082f49;
+}
+
+.btn-secondary {
+  background: #334155;
+  color: #f8fafc;
+  margin-top: 12px;
+}
+
+.excuse-box {
+  margin-top: 16px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fbbf24;
+  background: #1e293b;
+  padding: 3px 9px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.excuse-text {
+  font-size: 1.02rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.excuse-gain {
+  font-size: 0.88rem;
+  color: #34d399;
+  font-weight: 600;
+}
+
+.upgrades-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.upgrades-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upgrade-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.upgrade-title {
+  font-weight: 700;
+  font-size: 0.98rem;
+  margin-bottom: 3px;
+}
+
+.upgrade-desc {
+  font-size: 0.84rem;
+  color: #94a3b8;
+}
+
+.upgrade-btn {
+  background: #10b981;
+  color: #052e16;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.win-card {
+  text-align: center;
+  border-color: #10b981;
+}
+
+.win-card h2 {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.win-text {
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
