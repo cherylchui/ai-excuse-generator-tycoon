@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Excuse Generator Tycoon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>🏢 AI Excuse Generator Tycoon</h1>
+      <p class="subtitle">Make funny excuses for late projects, earn Hype, and upgrade your office!</p>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-box">
+        <span class="stat-label">Hype Points</span>
+        <strong id="hype-text" class="stat-value">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Per Click</span>
+        <strong id="per-click-text" class="stat-value">+10</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Auto Per Sec</span>
+        <strong id="auto-text" class="stat-value">+0/s</strong>
+      </div>
+    </div>
+
+    <section class="card">
+      <div class="goal-banner">
+        <span>Goal: Reach <strong>1,000 Hype</strong></span>
+        <span id="progress-text">0%</span>
+      </div>
+
+      <button id="btn-generate" class="btn btn-primary">🎤 Make a New AI Excuse</button>
+
+      <div id="excuse-box" class="excuse-box hidden">
+        <span id="excuse-tag" class="tag"></span>
+        <p id="excuse-text" class="excuse-text"></p>
+        <p id="excuse-gain" class="excuse-gain"></p>
+      </div>
+    </section>
+
+    <section class="card upgrades-card">
+      <h2>Upgrades</h2>
+      <div id="upgrades-list" class="upgrades-list"></div>
+    </section>
+
+    <section id="win-banner" class="card win-card hidden">
+      <h2>🎉 Goal Reached! You Built an Excuse Empire!</h2>
+      <p class="win-text">You hit 1,000 Hype! Keep playing to get even bigger numbers, or reset to start over.</p>
+      <button id="btn-reset" class="btn btn-secondary">↻ Start Over</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
